@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+           <LinearLayout
+
+               android:layout_marginTop="16dp"
+               android:paddingLeft="@dimen/activity_horizontal_margin"
+               android:paddingRight="@dimen/activity_horizontal_margin"
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <View
+                   android:layout_width="0dip"
+                   android:layout_height="0dip"
+                   android:focusable="true"
+                   android:focusableInTouchMode="true" />
+               <EditText
+
+               android:id="@+id/stu_number"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:hint="考生证号"
+                android:textSize="17sp"
+                android:paddingStart="6dp"
+                android:background="@drawable/register_bc"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/stu_search"
+                android:background="@drawable/register_button"
+                android:textColor="#fff"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="查询一下"
+                android:textStyle="bold" />
+           </LinearLayout>
+
+            <com.bin.david.form.core.SmartTable
+                android:id="@+id/peo_info"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <com.bin.david.form.core.SmartTable
+                android:id="@+id/stu_info"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <com.bin.david.form.core.SmartTable
+                android:id="@+id/admit_info"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        <LinearLayout
+            android:id="@+id/mylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <Spinner
+                android:id="@+id/select_university"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/register_bc"
+
+                android:spinnerMode="dialog" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/up_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/register_button"
+                    android:text="提交"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+       </LinearLayout>
+    </ScrollView>
+</LinearLayout>
